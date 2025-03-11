@@ -39,8 +39,8 @@
             <tbody>
             <tr>
                 <td>001</td>
-                <td>Bribery in Land Office</td>
-                <td>Reported bribery case involving land registration process.</td>
+                <td>Bangladesh in Land Office</td>
+                <td>Corruption in Bangladesh has been a continuing problem. According to all major ranking institutions, Bangladesh routinely finds itself among the most corrupt countries in the world.</td>
                 <td><span class="badge bg-warning">Under Review</span></td>
                 <td><span class="badge bg-danger">High</span></td>
                 <td>2025-03-01</td>
@@ -51,7 +51,7 @@
             <tr>
                 <td>002</td>
                 <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
+                <td>Corruption in Bangladesh has been a continuing problem. According to all major ranking institutions, Bangladesh routinely finds itself among the most corrupt countries in the world.</td>
                 <td><span class="badge bg-success">Resolved</span></td>
                 <td><span class="badge bg-warning">Medium</span></td>
                 <td>2025-02-20</td>
@@ -62,7 +62,7 @@
             <tr>
                 <td>002</td>
                 <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
+                <td>Corruption in Bangladesh has been a continuing problem. According to all major ranking institutions, Bangladesh routinely finds itself among the most corrupt countries in the world.</td>
                 <td><span class="badge bg-success">Resolved</span></td>
                 <td><span class="badge bg-warning">Medium</span></td>
                 <td>2025-02-20</td>
@@ -73,7 +73,7 @@
             <tr>
                 <td>002</td>
                 <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
+                <td>Corruption in Bangladesh has been a continuing problem. According to all major ranking institutions, </td>
                 <td><span class="badge bg-success">Resolved</span></td>
                 <td><span class="badge bg-warning">Medium</span></td>
                 <td>2025-02-20</td>
@@ -84,7 +84,7 @@
             <tr>
                 <td>002</td>
                 <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
+                <td>Corruption in Bangladesh has been a continuing problem. According to all major ranking institutions, Bangladesh routinely finds itself among the most corrupt countries in the world.</td>
                 <td><span class="badge bg-success">Resolved</span></td>
                 <td><span class="badge bg-warning">Medium</span></td>
                 <td>2025-02-20</td>

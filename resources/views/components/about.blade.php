@@ -32,7 +32,7 @@
                             <div class="profile d-flex align-items-center gap-3">
                                 <img src="assets/img/avatar-1.webp" alt="CEO Profile" class="profile-image">
                                 <div>
-                                    <h4 class="profile-name">Mario Smith</h4>
+                                    <h4 class="profile-name">Kariz</h4>
                                     <p class="profile-position">CEO &amp; Founder</p>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@
                                 <i class="bi bi-telephone-fill"></i>
                                 <div>
                                     <p class="contact-label">Call us anytime</p>
-                                    <p class="contact-number">+123 456-789</p>
+                                    <p class="contact-number">01648205171</p>
                                 </div>
                             </div>
                         </div>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="experience-badge floating">
                         <h3>15+ <span>Years</span></h3>
-                        <p>Of experience in business service</p>
+                        <p>12,000+ citizens actively fighting corruption through our platform</p>
                     </div>
                 </div>
             </div>

@@ -22,8 +22,8 @@
                         </div>
                         <div class="content">
                             <h4>Our Location</h4>
-                            <p>A108 Adam Street</p>
-                            <p>New York, NY 535022</p>
+                            <p>Mirpur</p>
+                            <p>Dhaka, Rupnogor</p>
                         </div>
                     </div>
 
@@ -33,8 +33,8 @@
                         </div>
                         <div class="content">
                             <h4>Phone Number</h4>
-                            <p>+1 5589 55488 55</p>
-                            <p>+1 6678 254445 41</p>
+                            <p>01648205171</p>
+                            <p>01648205171</p>
                         </div>
                     </div>
 
@@ -44,8 +44,8 @@
                         </div>
                         <div class="content">
                             <h4>Email Address</h4>
-                            <p>info@example.com</p>
-                            <p>contact@example.com</p>
+                            <p>shuvoj360@gmail.com</p>
+                            <p>shuvoj360@gmail.com</p>
                         </div>
                     </div>
                 </div>
