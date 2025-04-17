@@ -75,7 +75,7 @@
                 <td>2025-02-20</td>
                 <td>
                     <div class="d-flex">
-                        <a href="{{asset('/corruptionsDetails?id=002')}}" class="btn btn-primary btn-sm me-2">Details</a>
+                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
                         <button class="btn btn-success btn-sm update-btn" data-row-id="002">Update</button>
                     </div>
                 </td>
@@ -96,7 +96,7 @@
                 <td>2025-02-20</td>
                 <td>
                     <div class="d-flex">
-                        <a href="{{asset('/corruptionsDetails?id=003')}}" class="btn btn-primary btn-sm me-2">Details</a>
+                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
                         <button class="btn btn-success btn-sm update-btn" data-row-id="003">Update</button>
                     </div>
                 </td>
@@ -117,7 +117,7 @@
                 <td>2025-02-20</td>
                 <td>
                     <div class="d-flex">
-                        <a href="{{asset('/corruptionsDetails?id=004')}}" class="btn btn-primary btn-sm me-2">Details</a>
+                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
                         <button class="btn btn-success btn-sm update-btn" data-row-id="004">Update</button>
                     </div>
                 </td>
@@ -138,7 +138,7 @@
                 <td>2025-02-20</td>
                 <td>
                     <div class="d-flex">
-                        <a href="{{asset('/corruptionsDetails?id=005')}}" class="btn btn-primary btn-sm me-2">Details</a>
+                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
                         <button class="btn btn-success btn-sm update-btn" data-row-id="005">Update</button>
                     </div>
                 </td>
@@ -159,7 +159,7 @@
                 <td>2025-02-20</td>
                 <td>
                     <div class="d-flex">
-                        <a href="{{asset('/corruptionsDetails?id=006')}}" class="btn btn-primary btn-sm me-2">Details</a>
+                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
                         <button class="btn btn-success btn-sm update-btn" data-row-id="006">Update</button>
                     </div>
                 </td>
@@ -180,7 +180,7 @@
                 <td>2025-02-20</td>
                 <td>
                     <div class="d-flex">
-                        <a href="{{asset('/corruptionsDetails?id=007')}}" class="btn btn-primary btn-sm me-2">Details</a>
+                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
                         <button class="btn btn-success btn-sm update-btn" data-row-id="007">Update</button>
                     </div>
                 </td>
@@ -201,7 +201,7 @@
                 <td>2025-02-20</td>
                 <td>
                     <div class="d-flex">
-                        <a href="{{asset('/corruptionsDetails?id=008')}}" class="btn btn-primary btn-sm me-2">Details</a>
+                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
                         <button class="btn btn-success btn-sm update-btn" data-row-id="008">Update</button>
                     </div>
                 </td>
@@ -222,7 +222,7 @@
                 <td>2025-02-20</td>
                 <td>
                     <div class="d-flex">
-                        <a href="{{asset('/corruptionsDetails?id=009')}}" class="btn btn-primary btn-sm me-2">Details</a>
+                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
                         <button class="btn btn-success btn-sm update-btn" data-row-id="009">Update</button>
                     </div>
                 </td>
@@ -243,7 +243,7 @@
                 <td>2025-02-20</td>
                 <td>
                     <div class="d-flex">
-                        <a href="{{asset('/corruptionsDetails?id=010')}}" class="btn btn-primary btn-sm me-2">Details</a>
+                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
                         <button class="btn btn-success btn-sm update-btn" data-row-id="010">Update</button>
                     </div>
                 </td>
@@ -264,7 +264,7 @@
                 <td>2025-02-20</td>
                 <td>
                     <div class="d-flex">
-                        <a href="{{asset('/corruptionsDetails?id=011')}}" class="btn btn-primary btn-sm me-2">Details</a>
+                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
                         <button class="btn btn-success btn-sm update-btn" data-row-id="011">Update</button>
                     </div>
                 </td>
