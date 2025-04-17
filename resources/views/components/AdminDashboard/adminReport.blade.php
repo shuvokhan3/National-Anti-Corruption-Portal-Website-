@@ -1,5 +1,5 @@
 <div class="container mt-5">
-    <h1 class="mb-4 text-center">Corruption Reports</h1>
+    <h1 class="mb-4 text-center">Admin Reports</h1>
 
     <div class="row mb-3">
         <div class="col-md-6">
@@ -41,7 +41,7 @@
             <tr id="row_001">
                 <td>001</td>
                 <td>Bangladesh in Land Office</td>
-                <td>Corruption in Bangladesh has been a continuing problem..</td>
+                <td>Corruption in Bangladesh has b.</td>
                 <td>
                     <div class="status-selector">
                         <select name="reportStatus_001" id="reportStatus_001" class="form-select form-select-sm status-dropdown">
@@ -62,7 +62,7 @@
             <tr id="row_002">
                 <td>002</td>
                 <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been a continuing problem..</td>
+                <td>Corruption in Bangladesh has been</td>
                 <td>
                     <div class="status-selector">
                         <select name="reportStatus_002" id="reportStatus_002" class="form-select form-select-sm status-dropdown">
@@ -83,7 +83,7 @@
             <tr id="row_003">
                 <td>003</td>
                 <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been a continuing problem. </td>
+                <td>Corruption in Bangladesh has been </td>
                 <td>
                     <div class="status-selector">
                         <select name="reportStatus_003" id="reportStatus_003" class="form-select form-select-sm status-dropdown">
@@ -104,7 +104,7 @@
             <tr id="row_004">
                 <td>004</td>
                 <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been a continuing problem. According to all major ranking institutions, </td>
+                <td>Corruption in Bangladesh has been a.. </td>
                 <td>
                     <div class="status-selector">
                         <select name="reportStatus_004" id="reportStatus_004" class="form-select form-select-sm status-dropdown">
@@ -125,7 +125,7 @@
             <tr id="row_005">
                 <td>005</td>
                 <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been a continuing problem.</td>
+                <td>Corruption in Bangladesh has been a</td>
                 <td>
                     <div class="status-selector">
                         <select name="reportStatus_005" id="reportStatus_005" class="form-select form-select-sm status-dropdown">
@@ -146,7 +146,7 @@
             <tr id="row_006">
                 <td>006</td>
                 <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
+                <td>Alleged misuse of public funds in a</td>
                 <td>
                     <div class="status-selector">
                         <select name="reportStatus_006" id="reportStatus_006" class="form-select form-select-sm status-dropdown">
@@ -167,7 +167,7 @@
             <tr id="row_007">
                 <td>007</td>
                 <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
+                <td>Alleged misuse of public fun.</td>
                 <td>
                     <div class="status-selector">
                         <select name="reportStatus_007" id="reportStatus_007" class="form-select form-select-sm status-dropdown">
@@ -188,7 +188,7 @@
             <tr id="row_008">
                 <td>008</td>
                 <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
+                <td>Alleged misuse of public </td>
                 <td>
                     <div class="status-selector">
                         <select name="reportStatus_008" id="reportStatus_008" class="form-select form-select-sm status-dropdown">
@@ -209,7 +209,7 @@
             <tr id="row_009">
                 <td>009</td>
                 <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
+                <td>Alleged misuse of public.</td>
                 <td>
                     <div class="status-selector">
                         <select name="reportStatus_009" id="reportStatus_009" class="form-select form-select-sm status-dropdown">
@@ -230,7 +230,7 @@
             <tr id="row_010">
                 <td>010</td>
                 <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
+                <td>Alleged misuse of public fu.</td>
                 <td>
                     <div class="status-selector">
                         <select name="reportStatus_010" id="reportStatus_010" class="form-select form-select-sm status-dropdown">
@@ -251,7 +251,7 @@
             <tr id="row_011">
                 <td>011</td>
                 <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
+                <td>Alleged misuse of public funds .</td>
                 <td>
                     <div class="status-selector">
                         <select name="reportStatus_011" id="reportStatus_011" class="form-select form-select-sm status-dropdown">

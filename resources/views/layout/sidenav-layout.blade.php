@@ -41,7 +41,7 @@
             <span class="icon-nav m-0 h5" onclick="MenuBarClickHandler()">
                 <img class="nav-logo-sm mx-2"  src="{{asset('assets/img/menu.svg')}}" alt="logo"/>
             </span>
-            <img class="nav-logo  mx-2"  src="{{asset('assets/img/logo.png')}}" alt="logo"/>
+{{--            <img class="nav-logo  mx-2"  src="{{asset('assets/img/logo.png')}}" alt="logo"/>--}}
         </a>
 
         <div class="float-right h-auto d-flex">
@@ -53,10 +53,10 @@
                         <h6>User Name</h6>
                         <hr class="user-dropdown-divider  p-0"/>
                     </div>
-                    <a href="{{url('/userProfile')}}" class="side-bar-item">
+                    <a href="{{url('/adminUserProfile')}}" class="side-bar-item">
                         <span class="side-bar-item-caption">Profile</span>
                     </a>
-                    <a href="{{url("/logout")}}" class="side-bar-item">
+                    <a href="{{url("/adminLogout")}}" class="side-bar-item">
                         <span class="side-bar-item-caption">Logout</span>
                     </a>
                 </div>
