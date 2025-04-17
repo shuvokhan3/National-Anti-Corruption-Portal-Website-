@@ -1,74 +1,57 @@
-<div class="main-content">
-    <div class="page-content">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-xl-10 col-lg-10">
-                    <div class="card shadow">
-                        <div class="text-center">
-                            <h4 class="card-header bg-primary">Report</h4>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card animated fadeIn">
+                <div class="card-header bg-primary text-white">
+                    <h4>Report</h4>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="reportTitle">Corruption Title</label>
+                            <input type="text" class="form-control" id="reportTitle" placeholder="Type title">
                         </div>
 
-                        <div class="card-body">
-                            <form method="post" action="Action.php">
-
-                                <!--Post title-->
-                                <div class="mb-3">
-                                    <label class="form-label">Corruption Title</label>
-                                    <input type="text" name="title" class="form-control" required placeholder="Type title"/>
-                                </div>
-
-                                <!--Image File Upload-->
-                                <div class="mb-3">
-                                    <label class="form-label">Image Upload</label>
-                                    <input type="file" name="imageOne" class="form-control" required placeholder="Upload Image"/>
-                                </div>
-
-                                <!--Video Upload-->
-                                <div class="mb-3">
-                                    <label class="form-label">Video Upload</label>
-                                    <input type="file" name="VideoOne" class="form-control" required placeholder="Upload Video"/>
-                                </div>
-
-                                <!--Post description-->
-                                <div class="mb-3">
-                                    <label class="form-label">Corruption Description</label>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <textarea name="description" id="classic-editor"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Corruption Range -->
-                                <div class="mb-3">
-                                    <label class="form-label">Range</label>
-                                    <select class="form-select" name="Curruption Range">
-                                        <option value="1">High</option>
-                                        <option value="2">Medium</option>
-                                        <option value="3">Low</option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <div class="text-center">
-                                        <button type="submit" class="btn btn-primary waves-effect waves-light me-1 text-center">
-                                            Submit Corruption Information
-                                        </button>
-                                    </div>
-
-                                </div>
-                            </form>
+                        <div class="form-group mb-3">
+                            <label for="imageUpload">Image Upload</label>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="imageUpload">
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="form-group mb-3">
+                            <label for="videoUpload">Video Upload</label>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="videoUpload">
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="description">Corruption Description</label>
+                            <div class="rich-text-editor">
+                                <textarea class="form-control" id="description" rows="5"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Corruption Range -->
+                        <div class="mb-3">
+                            <label class="form-label">Range</label>
+                            <select class="form-select" name="Curruption Range">
+                                <option value="1">High</option>
+                                <option value="2">Medium</option>
+                                <option value="3">Low</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit Report</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 <script src="{{asset('assets/libs/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>

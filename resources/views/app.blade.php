@@ -26,14 +26,35 @@
     <link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
+
     <!-- Main CSS File -->
     <link href="{{asset('assets/css/main.css')}}" rel="stylesheet">
+    <link href={{asset('assets/css/jquery.dataTables.min.css')}}>
+    <script src="{{asset('assets/js/jquery-3.7.0.min.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.dataTables.min.js')}}"></script>
+
+
+    <link rel="icon" type="image/x-icon" href="{{asset('/favicon.ico')}}" />
+    <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet" />
+    <link href="{{asset('assets/css/animate.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('assets/css/fontawesome.css')}}" rel="stylesheet" />
+    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet" />
+    <link href="{{asset('assets/css/toastify.min.css')}}" rel="stylesheet" />
+    <script src="{{asset('assets/js/toastify-js.js')}}"></script>
+    <script src="{{asset('assets/js/axios.min.js')}}"></script>
+    <script src="{{asset('assets/js/config.js')}}"></script>
 
 </head>
 
 <body class="index-page">
 
 @include('components.navbar')
+
+<div id="loader" class="LoadingOverlay d-none">
+    <div class="Line-Progress">
+        <div class="indeterminate"></div>
+    </div>
+</div>
 
 
 <div id="content-div">
@@ -68,6 +89,9 @@
 
 <!-- Your custom JS -->
 <script src="{{ asset('assets/js/main.js') }}"></script>
+
+
+<script src="{{asset('assets/js/bootstrap.bundle.js')}}"></script>
 
 @include('components.footer')
 

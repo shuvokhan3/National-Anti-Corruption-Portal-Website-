@@ -15,6 +15,7 @@
             </div>
             <div class="card-footer">
                 <h5>Attached Evidence:</h5>
+
                 <img id="reportImage"  src=" " alt="Report Image" class="img-fluid d-none">
                 <video id="reportVideo" controls class="d-none w-100 mt-3">
                     <source src=" " type="video/mp4">

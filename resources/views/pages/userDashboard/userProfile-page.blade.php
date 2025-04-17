@@ -1,4 +1,4 @@
 @extends('sidenav-layout')
 @section('content')
-    @include('components.corruptionForm')
+    @include('components.userDashboard.userProfile')
 @endsection

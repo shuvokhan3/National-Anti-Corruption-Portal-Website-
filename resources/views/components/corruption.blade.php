@@ -24,7 +24,7 @@
     </div>
 
     <div class="table-responsive">
-        <table class="table table-bordered table-striped">
+        <table class="table table-bordered table-striped" id="tableData">
             <thead class="table-dark">
             <tr>
                 <th>ID</th>
@@ -36,11 +36,12 @@
                 <th>View Details</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody id="tableList">
+
             <tr>
                 <td>001</td>
                 <td>Bangladesh in Land Office</td>
-                <td>Corruption in Bangladesh has been a continuing problem. According to all major ranking institutions, Bangladesh routinely finds itself among the most corrupt countries in the world.</td>
+                <td>Corruption in Bangladesh has been a continuing problem..</td>
                 <td><span class="badge bg-warning">Under Review</span></td>
                 <td><span class="badge bg-danger">High</span></td>
                 <td>2025-03-01</td>
@@ -51,7 +52,7 @@
             <tr>
                 <td>002</td>
                 <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been a continuing problem. According to all major ranking institutions, Bangladesh routinely finds itself among the most corrupt countries in the world.</td>
+                <td>Corruption in Bangladesh has been a continuing problem..</td>
                 <td><span class="badge bg-success">Resolved</span></td>
                 <td><span class="badge bg-warning">Medium</span></td>
                 <td>2025-02-20</td>
@@ -62,7 +63,7 @@
             <tr>
                 <td>002</td>
                 <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been a continuing problem. According to all major ranking institutions, Bangladesh routinely finds itself among the most corrupt countries in the world.</td>
+                <td>Corruption in Bangladesh has been a continuing problem. </td>
                 <td><span class="badge bg-success">Resolved</span></td>
                 <td><span class="badge bg-warning">Medium</span></td>
                 <td>2025-02-20</td>
@@ -84,7 +85,7 @@
             <tr>
                 <td>002</td>
                 <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been a continuing problem. According to all major ranking institutions, Bangladesh routinely finds itself among the most corrupt countries in the world.</td>
+                <td>Corruption in Bangladesh has been a continuing problem.</td>
                 <td><span class="badge bg-success">Resolved</span></td>
                 <td><span class="badge bg-warning">Medium</span></td>
                 <td>2025-02-20</td>
@@ -158,6 +159,8 @@
                     <a href="{{asset('/corruptionsDetails?id=002')}}" class="btn btn-primary btn-sm">Details</a>
                 </td>
             </tr>
+
+
             </tbody>
         </table>
     </div>
@@ -179,3 +182,7 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+</script>
