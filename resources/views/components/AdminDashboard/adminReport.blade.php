@@ -1,8 +1,6 @@
 <div class="container mt-5">
     <h1 class="mb-4 text-center">Admin Reports</h1>
 
-
-
     <div class="table-responsive">
         <table class="table table-bordered table-striped" id="tableData">
             <thead class="table-dark">
@@ -55,10 +53,22 @@
         // Append all rows at once
         res.data.forEach(function (item, index) {
 
+            // Truncate title to first 5-6 words
+            let truncatedTitle = item['title'].split(' ').slice(0, 6).join(' ');
+            if (item['title'].split(' ').length > 6) {
+                truncatedTitle += '...';
+            }
+
+            // Truncate description to first 5-6 words
+            let truncatedDesc = item['description'].split(' ').slice(0, 6).join(' ');
+            if (item['description'].split(' ').length > 6) {
+                truncatedDesc += '...';
+            }
+
             let row = `<tr id="row_${item['id']}">
             <td>${index + 1}</td>
-            <td>${item['title']}</td>
-            <td>${item['description']}</td>
+            <td>${truncatedTitle}</td>
+            <td>${truncatedDesc}</td>
             <td>
                 <div class="status-selector">
                     <select name="reportStatus_${item['id']}" id="reportStatus_${item['id']}" class="form-select form-select-sm status-dropdown">
@@ -71,7 +81,7 @@
             <td>${item['created_at']}</td>
             <td>
                 <div class="d-flex">
-                    <button data-id="${item['id']}" class="btn detailBtn btn-primary btn-sm me-2">Details</button>
+                    <button data-id="${item['id']}"  class="btn detailBtn btn-primary btn-sm me-2" >Details</button>
                     <button data-id="${item['id']}" data-row-id="${item['id']}" class="btn updateBtn btn-success btn-sm update-btn">Update</button>
                 </div>
             </td>
@@ -83,7 +93,7 @@
         // Attach click event handlers to detail buttons
         $('.detailBtn').on('click', async function() {
             let id = $(this).data('id');
-            await loadReportDetails(id);
+            await displayInfo(id);
             $("#reportDetailsModal").modal('show');
         });
 

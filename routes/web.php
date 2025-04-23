@@ -37,6 +37,8 @@ Route::post('/createReport',[UserController::class,'CreateReport'])->middleware(
 
 //Admin query for all report
 Route::get('/adminReports',[AdminDashboardController::class,'AdminReports']);
+//single admin report
+Route::post('/singleAdminReport',[AdminDashboardController::class,'SingleAdminReport']);
 
 
 

@@ -23,4 +23,18 @@ class AdminDashboardController extends Controller
         return CorruptionReport::all();
     }
 
+    public function SingleAdminReport(Request $request){
+
+        try{
+            $report_id = $request->input('id');
+            return CorruptionReport::where('id','=',$report_id)
+                ->first();
+        }catch (\Exception $exception){
+            return response()->json([
+                'status'=> 'Error',
+                'message' => 'Something went wrong'
+            ]);
+        }
+    }
+
 }
