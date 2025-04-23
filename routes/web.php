@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 
 
 //main page route
-Route::get('/',[HomeController::class,'page']);
-Route::get('/contact',[ContactController::class,'viewContact']);
-Route::get('/about',[AboutController::class,'viewAbout']);
-Route::get('/corruptions',[CorruptionController::class,'viewCorruptions']);
+Route::get('/',[UserController::class,'page']);
+Route::get('/contact',[UserController::class,'viewContact']);
+Route::get('/about',[UserController::class,'viewAbout']);
+Route::get('/corruptions',[UserController::class,'viewCorruptions']);
 
 //auth frontend view
 Route::get('/user-Login',[UserController::class, 'viewLogin']);
@@ -25,8 +25,8 @@ Route::get('/user-Register',[UserController::class, 'viewRegister']);
 Route::get('/userProfile',[UserController::class, 'userProfile']);
 
 //Internal Route
-Route::get('/corruptionsDetails',[CorruptionDetailsController::class,'viewDetails']);
-Route::get('/submitForm',[SubmitCorruptionController::class,'submitForm'])->middleware([TokenVerificationMiddleware::class]);
+Route::get('/corruptionsDetails',[UserController::class,'viewDetails']);
+Route::get('/submitForm',[UserController::class,'submitForm'])->middleware([TokenVerificationMiddleware::class]);
 
 
 //auth backend
@@ -34,6 +34,12 @@ Route::post('/UserRegistration',[UserController::class, 'UserRegistration']);
 Route::post('/UserLogin',[UserController::class, 'UserLogin']);
 //user logout
 Route::get('/logout',[UserController::class,'UserLogout']);
+
+//Corruption Report create
+Route::post('/createReport',[UserController::class,'CreateReport'])->middleware([TokenVerificationMiddleware::class]);
+
+
+
 
 
 //admin route

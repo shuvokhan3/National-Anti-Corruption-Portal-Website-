@@ -10,10 +10,10 @@ class AdminDashboardController extends Controller
     {
         return view('pages.AdminDashboard.dashboard-page');
     }
-
     public function adminViewReports(){
         return view('pages.AdminDashboard.report-page');
     }
+
     public function adminReportsDetails(){
         return view('pages.AdminDashboard.admin-report-details-page');
     }

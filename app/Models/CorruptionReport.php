@@ -10,6 +10,7 @@ class CorruptionReport extends Model
     protected $fillable = ['user_id','title', 'description','status', 'severity', 'image_path', 'video_path'];
 
     protected $attributes = [
-        'status' => 0
+        'status' => 0,
+        'severity' => 0
     ];
 }

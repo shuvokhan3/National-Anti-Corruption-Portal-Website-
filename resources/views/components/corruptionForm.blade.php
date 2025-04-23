@@ -6,26 +6,17 @@
                     <h4>Report</h4>
                 </div>
                 <div class="card-body">
-                    <form>
+
+
+                    <div class="col-12 p-1">
+
+                        <!--Title -->
                         <div class="form-group mb-3">
                             <label for="reportTitle">Corruption Title</label>
                             <input type="text" class="form-control" id="reportTitle" placeholder="Type title">
                         </div>
 
-                        <div class="form-group mb-3">
-                            <label for="imageUpload">Image Upload</label>
-                            <div class="input-group">
-                                <input type="file" class="form-control" id="imageUpload">
-                            </div>
-                        </div>
-
-                        <div class="form-group mb-3">
-                            <label for="videoUpload">Video Upload</label>
-                            <div class="input-group">
-                                <input type="file" class="form-control" id="videoUpload">
-                            </div>
-                        </div>
-
+                        <!--Description-->
                         <div class="form-group mb-3">
                             <label for="description">Corruption Description</label>
                             <div class="rich-text-editor">
@@ -36,41 +27,64 @@
                         <!-- Corruption Range -->
                         <div class="mb-3">
                             <label class="form-label">Range</label>
-                            <select class="form-select" name="Curruption Range">
+                            <select class="form-select" name="Curruption Range" id="range">
                                 <option value="1">High</option>
-                                <option value="2">Medium</option>
-                                <option value="3">Low</option>
+                                <option value="2">Low</option>
                             </select>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Submit Report</button>
-                    </form>
+                        <!--image upload form-->
+                        <br/>
+                        <img class="w-15" id="newImg" src="{{asset('assets/img/default.jpg')}}"/>
+                        <br/>
+                        <label class="form-label">Image</label>
+                        <input oninput="newImg.src=window.URL.createObjectURL(this.files[0])" type="file" class="form-control" id="corruptionImg">
+
+                        <!-- Video Preview and Upload -->
+                        <div class="mb-3" >
+                            <video id="videoPreview" class="w-15 mt-5" controls style="display:none; max-width: 300px;"></video>
+                            <br/>
+                            <label class="form-label">Video</label>
+                            <input type="file" class="form-control" id="corruptionVideo" accept="video/*">
+                        </div>
+
+
+                        <div class="mt-6">
+                            <button type="submit" class="btn btn-primary">Submit Report</button>
+                        </div>
+
+
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<script>
+    // JavaScript for video preview
+    document.getElementById('corruptionVideo').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const videoElement = document.getElementById('videoPreview');
+            const videoURL = URL.createObjectURL(file);
 
+            videoElement.src = videoURL;
+            videoElement.style.display = 'block';
 
-<script src="{{asset('assets/libs/jquery/jquery.min.js')}}"></script>
-<script src="{{asset('assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<script src="{{asset('assets/libs/metismenu/metisMenu.min.js')}}"></script>
-<script src="{{asset('assets/libs/simplebar/simplebar.min.js')}}"></script>
-<script src="{{asset('assets/libs/node-waves/waves.min.js')}}"></script>
-<script src="{{asset('assets/libs/waypoints/lib/jquery.waypoints.min.js')}}"></script>
-<script src="{{asset('assets/libs/jquery.counterup/jquery.counterup.min.js')}}"></script>
-<script src="{{asset('assets/libs/apexcharts/apexcharts.min.js')}}"></script>
-<script src="{{asset('assets/js/pages/dashboard.init.js')}}"></script>
-<script src="{{asset('assets/js/app.js')}}"></script>
-<script src="{{asset('assets/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js')}}"></script>
-
+            // Clean up the URL object when no longer needed
+            videoElement.onload = function() {
+                URL.revokeObjectURL(videoURL);
+            };
+        }
+    });
+</script>
 <script>
     ClassicEditor.create(document.querySelector('#classic-editor')).catch(error => {
         console.error(error);
     });
 </script>
-
 <style>
     .main-content {
         padding: 20px;
