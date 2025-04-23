@@ -1,12 +1,6 @@
 <?php
 
-use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminDashboardController;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\CorruptionController;
-use App\Http\Controllers\CorruptionDetailsController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\SubmitCorruptionController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\TokenVerificationMiddleware;
 use Illuminate\Support\Facades\Route;
@@ -37,6 +31,10 @@ Route::get('/logout',[UserController::class,'UserLogout']);
 
 //Corruption Report create
 Route::post('/createReport',[UserController::class,'CreateReport'])->middleware([TokenVerificationMiddleware::class]);
+
+//Admin query for all report
+Route::get('/adminReports',[AdminDashboardController::class,'AdminReports']);
+
 
 
 

@@ -50,7 +50,7 @@
 
 
                         <div class="mt-6">
-                            <button type="submit" class="btn btn-primary">Submit Report</button>
+                            <button onclick="submit()" type="submit" class="btn btn-primary">Submit Report</button>
                         </div>
 
 
@@ -93,3 +93,64 @@
         border-radius: 10px;
     }
 </style>
+
+<script>
+
+
+
+    async function submit(){
+        let reportTitle = document.getElementById('reportTitle').value;
+        let description = document.getElementById('description').value;
+        let range = document.getElementById('range').value;
+        let corruptionImg = document.getElementById('corruptionImg').files[0];
+        let corruptionVideo = document.getElementById('corruptionVideo').files[0];
+
+
+
+        if(reportTitle.length === 0){
+            errorToast('Report Field Must Be Required !');
+        }
+        else if(description.length === 0){
+            errorToast('Description Field Must Be Required !');
+        }
+        else if(range.length === 0){
+            errorToast('Range Field Must Be Required !');
+        }
+        else if(!corruptionImg){
+            errorToast('Image Must Be Required !');
+        }else if(!corruptionVideo){
+            errorToast('Video Must Be Required !');
+        }else{
+
+
+            let formData = new FormData();
+
+            formData.append('title',reportTitle)
+            formData.append('description',description)
+            formData.append('severity',range)
+            formData.append('img',corruptionImg)
+            formData.append('video',corruptionVideo)
+
+
+            const config = {
+                headers:{
+                    'content-type':'multipart/form-data'
+                }
+            }
+
+            showLoader();
+            let res = await axios.post('/createReport',formData,config);
+            hideLoader();
+
+            if(res.status === 201){
+                successToast('Form Submit Successfully !');
+            }else{
+                errorToast("Request Fail !");
+            }
+        }
+
+    }
+
+
+
+</script>

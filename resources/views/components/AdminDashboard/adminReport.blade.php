@@ -1,27 +1,7 @@
 <div class="container mt-5">
     <h1 class="mb-4 text-center">Admin Reports</h1>
 
-    <div class="row mb-3">
-        <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Search reports...">
-        </div>
-        <div class="col-md-3">
-            <select class="form-select">
-                <option value="">Filter by Status</option>
-                <option value="under_review">Under Review</option>
-                <option value="resolved">Resolved</option>
-                <option value="pending">Pending</option>
-            </select>
-        </div>
-        <div class="col-md-3">
-            <select class="form-select">
-                <option value="">Filter by Severity</option>
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-            </select>
-        </div>
-    </div>
+
 
     <div class="table-responsive">
         <table class="table table-bordered table-striped" id="tableData">
@@ -36,6 +16,7 @@
                 <th>Actions</th>
             </tr>
             </thead>
+
             <tbody id="tableList">
 
             <tr id="row_001">
@@ -62,238 +43,11 @@
 
 
 
-            <tr id="row_002">
-                <td>002</td>
-                <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been</td>
-                <td>
-                    <div class="status-selector">
-                        <select name="reportStatus_002" id="reportStatus_002" class="form-select form-select-sm status-dropdown">
-                            <option value="0" data-badge="warning">Under Review</option>
-                            <option value="1" data-badge="success" selected>Resolved</option>
-                        </select>
-                    </div>
-                </td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <div class="d-flex">
-                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
-                        <button class="btn btn-success btn-sm update-btn" data-row-id="002">Update</button>
-                    </div>
-                </td>
-            </tr>
-            <tr id="row_003">
-                <td>003</td>
-                <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been </td>
-                <td>
-                    <div class="status-selector">
-                        <select name="reportStatus_003" id="reportStatus_003" class="form-select form-select-sm status-dropdown">
-                            <option value="0" data-badge="warning">Under Review</option>
-                            <option value="1" data-badge="success" selected>Resolved</option>
-                        </select>
-                    </div>
-                </td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <div class="d-flex">
-                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
-                        <button class="btn btn-success btn-sm update-btn" data-row-id="003">Update</button>
-                    </div>
-                </td>
-            </tr>
-            <tr id="row_004">
-                <td>004</td>
-                <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been a.. </td>
-                <td>
-                    <div class="status-selector">
-                        <select name="reportStatus_004" id="reportStatus_004" class="form-select form-select-sm status-dropdown">
-                            <option value="0" data-badge="warning">Under Review</option>
-                            <option value="1" data-badge="success" selected>Resolved</option>
-                        </select>
-                    </div>
-                </td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <div class="d-flex">
-                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
-                        <button class="btn btn-success btn-sm update-btn" data-row-id="004">Update</button>
-                    </div>
-                </td>
-            </tr>
-            <tr id="row_005">
-                <td>005</td>
-                <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been a</td>
-                <td>
-                    <div class="status-selector">
-                        <select name="reportStatus_005" id="reportStatus_005" class="form-select form-select-sm status-dropdown">
-                            <option value="0" data-badge="warning">Under Review</option>
-                            <option value="1" data-badge="success" selected>Resolved</option>
-                        </select>
-                    </div>
-                </td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <div class="d-flex">
-                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
-                        <button class="btn btn-success btn-sm update-btn" data-row-id="005">Update</button>
-                    </div>
-                </td>
-            </tr>
-            <tr id="row_006">
-                <td>006</td>
-                <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a</td>
-                <td>
-                    <div class="status-selector">
-                        <select name="reportStatus_006" id="reportStatus_006" class="form-select form-select-sm status-dropdown">
-                            <option value="0" data-badge="warning">Under Review</option>
-                            <option value="1" data-badge="success" selected>Resolved</option>
-                        </select>
-                    </div>
-                </td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <div class="d-flex">
-                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
-                        <button class="btn btn-success btn-sm update-btn" data-row-id="006">Update</button>
-                    </div>
-                </td>
-            </tr>
-            <tr id="row_007">
-                <td>007</td>
-                <td>Misuse of Funds</td>
-                <td>Alleged misuse of public fun.</td>
-                <td>
-                    <div class="status-selector">
-                        <select name="reportStatus_007" id="reportStatus_007" class="form-select form-select-sm status-dropdown">
-                            <option value="0" data-badge="warning">Under Review</option>
-                            <option value="1" data-badge="success" selected>Resolved</option>
-                        </select>
-                    </div>
-                </td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <div class="d-flex">
-                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
-                        <button class="btn btn-success btn-sm update-btn" data-row-id="007">Update</button>
-                    </div>
-                </td>
-            </tr>
-            <tr id="row_008">
-                <td>008</td>
-                <td>Misuse of Funds</td>
-                <td>Alleged misuse of public </td>
-                <td>
-                    <div class="status-selector">
-                        <select name="reportStatus_008" id="reportStatus_008" class="form-select form-select-sm status-dropdown">
-                            <option value="0" data-badge="warning">Under Review</option>
-                            <option value="1" data-badge="success" selected>Resolved</option>
-                        </select>
-                    </div>
-                </td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <div class="d-flex">
-                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
-                        <button class="btn btn-success btn-sm update-btn" data-row-id="008">Update</button>
-                    </div>
-                </td>
-            </tr>
-            <tr id="row_009">
-                <td>009</td>
-                <td>Misuse of Funds</td>
-                <td>Alleged misuse of public.</td>
-                <td>
-                    <div class="status-selector">
-                        <select name="reportStatus_009" id="reportStatus_009" class="form-select form-select-sm status-dropdown">
-                            <option value="0" data-badge="warning">Under Review</option>
-                            <option value="1" data-badge="success" selected>Resolved</option>
-                        </select>
-                    </div>
-                </td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <div class="d-flex">
-                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
-                        <button class="btn btn-success btn-sm update-btn" data-row-id="009">Update</button>
-                    </div>
-                </td>
-            </tr>
-            <tr id="row_010">
-                <td>010</td>
-                <td>Misuse of Funds</td>
-                <td>Alleged misuse of public fu.</td>
-                <td>
-                    <div class="status-selector">
-                        <select name="reportStatus_010" id="reportStatus_010" class="form-select form-select-sm status-dropdown">
-                            <option value="0" data-badge="warning">Under Review</option>
-                            <option value="1" data-badge="success" selected>Resolved</option>
-                        </select>
-                    </div>
-                </td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <div class="d-flex">
-                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
-                        <button class="btn btn-success btn-sm update-btn" data-row-id="010">Update</button>
-                    </div>
-                </td>
-            </tr>
-            <tr id="row_011">
-                <td>011</td>
-                <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds .</td>
-                <td>
-                    <div class="status-selector">
-                        <select name="reportStatus_011" id="reportStatus_011" class="form-select form-select-sm status-dropdown">
-                            <option value="0" data-badge="warning">Under Review</option>
-                            <option value="1" data-badge="success" selected>Resolved</option>
-                        </select>
-                    </div>
-                </td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <div class="d-flex">
-                        <a href="{{asset('/adminReportsDetails')}}" class="btn btn-primary btn-sm me-2">Details</a>
-                        <button class="btn btn-success btn-sm update-btn" data-row-id="011">Update</button>
-                    </div>
-                </td>
-            </tr>
-
             </tbody>
+
         </table>
     </div>
 
-
-
-
-    <!-- Pagination -->
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
-        </ul>
-    </nav>
 
     <!-- Toast notification for status updates -->
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
@@ -439,4 +193,9 @@
             });
         });
     });
+</script>
+
+
+<script>
+    
 </script>
