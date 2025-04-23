@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('title',500);
             $table->string('description',500);
             $table->boolean('status');
-            $table->boolean('severity');
+            $table->string('severity');//high and low
             $table->string('image_path');
             $table->string('video_path');
 

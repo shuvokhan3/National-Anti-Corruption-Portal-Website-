@@ -28,8 +28,8 @@
                         <div class="mb-3">
                             <label class="form-label">Range</label>
                             <select class="form-select" name="Curruption Range" id="range">
-                                <option value="1">High</option>
-                                <option value="2">Low</option>
+                                <option value="High">High</option>
+                                <option value="Low">Low</option>
                             </select>
                         </div>
 

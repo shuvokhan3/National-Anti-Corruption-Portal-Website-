@@ -32,11 +32,11 @@ Route::get('/logout',[UserController::class,'UserLogout']);
 //Corruption Report create
 Route::post('/createReport',[UserController::class,'CreateReport'])->middleware([TokenVerificationMiddleware::class]);
 
+
+
+
 //Admin query for all report
 Route::get('/adminReports',[AdminDashboardController::class,'AdminReports']);
-
-
-
 
 
 

@@ -22,4 +22,5 @@ class AdminDashboardController extends Controller
     public function AdminReports(Request $request){
         return CorruptionReport::all();
     }
+
 }
