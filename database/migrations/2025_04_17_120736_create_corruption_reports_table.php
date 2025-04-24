@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreign('user_id')->references('id')->on('users')->cascadeOnUpdate()->cascadeOnDelete();
 
             $table->string('title',500);
-            $table->string('description',500);
+            $table->string('description',500);//change this 500 word limit
             $table->boolean('status');
             $table->string('severity');//high and low
             $table->string('image_path');

@@ -97,6 +97,20 @@
             $("#reportDetailsModal").modal('show');
         });
 
+        $('.updateBtn').on('click', async function(){
+            let id = $(this).data('id');
+
+            // Get the status value from the dropdown
+            let statusValue = $(`#reportStatus_${id}`).val();
+
+            // Update the hidden inputs in the modal
+            $("#updateID").val(id);
+            $("#updateStatus").val(statusValue);
+
+            await FillUpUpdateForm(id, statusValue);
+            $("#update-modal").modal('show');
+        });
+
         // Initialize DataTable ONCE after appending all rows
         new DataTable('#tableData', {
             order: [[0, 'asc']],

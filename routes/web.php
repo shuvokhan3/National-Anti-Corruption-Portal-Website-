@@ -39,6 +39,10 @@ Route::post('/createReport',[UserController::class,'CreateReport'])->middleware(
 Route::get('/adminReports',[AdminDashboardController::class,'AdminReports']);
 //single admin report
 Route::post('/singleAdminReport',[AdminDashboardController::class,'SingleAdminReport']);
+//status update
+Route::post('/statusUpdate',[AdminDashboardController::class,'StatusUpdate']);
+//status by id
+Route::post('/statusById',[AdminDashboardController::class,'StatusById']);
 
 
 
