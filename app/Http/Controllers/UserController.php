@@ -146,4 +146,16 @@ class UserController extends Controller
         }
     }
 
+    public function ReportsFeeds(Request $request){
+        try{
+            return CorruptionReport::all();
+        }catch (\Exception $e){
+            return response()->json([
+                'status' => 'failed',
+                'message'=>'Something went wrong'
+            ]);
+        }
+
+    }
+
 }
