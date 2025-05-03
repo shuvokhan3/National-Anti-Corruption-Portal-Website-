@@ -51,6 +51,7 @@
 
         if(res.data === 1){
             successToast("Status Update Successfully!!");
+
         }
         else if(res.data === 0){
             errorToast("Report Status Under Review");
