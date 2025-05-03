@@ -65,19 +65,31 @@
                 truncatedDesc += '...';
             }
 
+            // Determine badge color for severity
+            let severityClass = '';
+            if (item['severity'] === "1" || item['severity'] === "High") {
+                severityClass = 'bg-danger';  // Red for High
+            } else if (item['severity'] === "2" || item['severity'] === "Medium") {
+                severityClass = 'bg-warning'; // Yellow for Medium
+            } else {
+                severityClass = 'bg-success'; // Green for Low
+            }
+
             let row = `<tr id="row_${item['id']}">
             <td>${index + 1}</td>
             <td>${truncatedTitle}</td>
             <td>${truncatedDesc}</td>
             <td>
-                <div class="status-selector">
-                    <select name="reportStatus_${item['id']}" id="reportStatus_${item['id']}" class="form-select form-select-sm status-dropdown">
-                        <option value="0" data-badge="warning">Under Review</option>
-                        <option value="1" data-badge="success">Resolved</option>
-                    </select>
-                </div>
+            <div class="status-selector">
+    <select name="reportStatus_${item['id']}" id="reportStatus_${item['id']}"
+            class="form-select form-select-sm status-dropdown ${item['status'] === 0 ? 'border-warning text-warning' : 'border-success text-success'}"
+            style="background-color: ${item['status'] === 0 ? '#fff8e1' : '#e8f5e9'}; font-weight: 500;">
+        <option value="0" data-badge="warning" ${item['status'] === 0 ? 'selected' : ''}>Under Review</option>
+        <option value="1" data-badge="success" ${item['status'] === 1 ? 'selected' : ''}>Resolved</option>
+    </select>
+</div>
             </td>
-            <td><span class="badge bg-danger">${item['severity']}</span></td>
+             <td><span class="badge ${severityClass}">${item['severity']}</span></td>
             <td>${item['created_at']}</td>
             <td>
                 <div class="d-flex">
@@ -88,6 +100,18 @@
         </tr>`;
 
             tableList.append(row);
+        });
+
+        // Add this after you append all rows (before DataTable initialization)
+        $('.status-dropdown').on('change', function() {
+            const value = $(this).val();
+            if (value === "0") {
+                $(this).removeClass('border-success text-success').addClass('border-warning text-warning');
+                $(this).css('background-color', '#fff8e1');
+            } else {
+                $(this).removeClass('border-warning text-warning').addClass('border-success text-success');
+                $(this).css('background-color', '#e8f5e9');
+            }
         });
 
         // Attach click event handlers to detail buttons
