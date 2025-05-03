@@ -32,6 +32,8 @@ Route::get('/logout',[UserController::class,'UserLogout']);
 //Corruption Report create
 Route::post('/createReport',[UserController::class,'CreateReport'])->middleware([TokenVerificationMiddleware::class]);
 
+//Corruption Report feed
+Route::get('/reportsFeeds',[UserController::class,'ReportsFeeds']);
 
 
 
