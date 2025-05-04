@@ -1,28 +1,6 @@
 <div class="container mt-5">
     <h1 class="mb-4 text-center">Corruption Reports</h1>
 
-    <div class="row mb-3">
-        <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Search reports...">
-        </div>
-        <div class="col-md-3">
-            <select class="form-select">
-                <option value="">Filter by Status</option>
-                <option value="under_review">Under Review</option>
-                <option value="resolved">Resolved</option>
-                <option value="pending">Pending</option>
-            </select>
-        </div>
-        <div class="col-md-3">
-            <select class="form-select">
-                <option value="">Filter by Severity</option>
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-            </select>
-        </div>
-    </div>
-
     <div class="table-responsive">
         <table class="table table-bordered table-striped" id="tableData">
             <thead class="table-dark">
@@ -33,156 +11,117 @@
                 <th>Status</th>
                 <th>Severity</th>
                 <th>Date Submitted</th>
-                <th>View Details</th>
+                <th>Actions</th>
             </tr>
             </thead>
-            <tbody id="tableList">
 
-            <tr>
-                <td>001</td>
-                <td>Bangladesh in Land Office</td>
-                <td>Corruption in Bangladesh has been a continuing problem..</td>
-                <td><span class="badge bg-warning">Under Review</span></td>
-                <td><span class="badge bg-danger">High</span></td>
-                <td>2025-03-01</td>
-                <td>
-                    <a href="{{asset('/corruptionsDetails?id=001')}}" class="btn btn-primary btn-sm">Details</a>
-                </td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been a continuing problem..</td>
-                <td><span class="badge bg-success">Resolved</span></td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <a href="{{asset('/corruptionsDetails?id=002')}}" class="btn btn-primary btn-sm">Details</a>
-                </td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been a continuing problem. </td>
-                <td><span class="badge bg-success">Resolved</span></td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <a href="{{asset('/corruptionsDetails?id=002')}}" class="btn btn-primary btn-sm">Details</a>
-                </td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been a continuing problem. According to all major ranking institutions, </td>
-                <td><span class="badge bg-success">Resolved</span></td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <a href="{{asset('/corruptionsDetails?id=002')}}" class="btn btn-primary btn-sm">Details</a>
-                </td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Misuse of Funds</td>
-                <td>Corruption in Bangladesh has been a continuing problem.</td>
-                <td><span class="badge bg-success">Resolved</span></td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <a href="{{asset('/corruptionsDetails?id=002')}}" class="btn btn-primary btn-sm">Details</a>
-                </td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
-                <td><span class="badge bg-success">Resolved</span></td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <a href="{{asset('/corruptionsDetails?id=002')}}" class="btn btn-primary btn-sm">Details</a>
-                </td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
-                <td><span class="badge bg-success">Resolved</span></td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <a href="{{asset('/corruptionsDetails?id=002')}}" class="btn btn-primary btn-sm">Details</a>
-                </td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
-                <td><span class="badge bg-success">Resolved</span></td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <a href="{{asset('/corruptionsDetails?id=002')}}" class="btn btn-primary btn-sm">Details</a>
-                </td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
-                <td><span class="badge bg-success">Resolved</span></td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <a href="{{asset('/corruptionsDetails?id=002')}}" class="btn btn-primary btn-sm">Details</a>
-                </td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
-                <td><span class="badge bg-success">Resolved</span></td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <a href="{{asset('/corruptionsDetails?id=002')}}" class="btn btn-primary btn-sm">Details</a>
-                </td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Misuse of Funds</td>
-                <td>Alleged misuse of public funds in a school project.</td>
-                <td><span class="badge bg-success">Resolved</span></td>
-                <td><span class="badge bg-warning">Medium</span></td>
-                <td>2025-02-20</td>
-                <td>
-                    <a href="{{asset('/corruptionsDetails?id=002')}}" class="btn btn-primary btn-sm">Details</a>
-                </td>
-            </tr>
+            <tbody id="tableList">
 
 
             </tbody>
+
         </table>
     </div>
-    <!-- Pagination -->
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
-        </ul>
-    </nav>
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 <script>
 
+
+    getListForUser();
+
+    async function getListForUser() {
+
+        showLoader();
+        let res = await axios.get('/reportsFeeds');
+        hideLoader();
+
+
+        let tableList = $("#tableList");
+        let tableData = $("#tableData");
+
+        // Destroy existing DataTable if it exists
+        if ($.fn.DataTable.isDataTable('#tableData')) {
+            tableData.DataTable().destroy();
+        }
+
+        // Clear table body
+        tableList.empty();
+
+        // Append all rows at once
+        res.data.forEach(function (item, index) {
+            // Truncate title to first 5-6 words
+            let truncatedTitle = item['title'].split(' ').slice(0, 6).join(' ');
+            if (item['title'].split(' ').length > 6) {
+                truncatedTitle += '...';
+            }
+
+            // Truncate description to first 5-6 words
+            let truncatedDesc = item['description'].split(' ').slice(0, 6).join(' ');
+            if (item['description'].split(' ').length > 6) {
+                truncatedDesc += '...';
+            }
+
+            // Determine badge color for severity
+            let severityClass = '';
+            if (item['severity'] === "1" || item['severity'] === "High") {
+                severityClass = 'bg-danger';  // Red for High
+            } else if (item['severity'] === "2" || item['severity'] === "Medium") {
+                severityClass = 'bg-warning'; // Yellow for Medium
+            } else {
+                severityClass = 'bg-success'; // Green for Low
+            }
+
+            let row = `<tr>
+    <td>${item['id']}</td>
+    <td>${truncatedTitle}</td>
+    <td>${truncatedDesc}</td>
+    <td><span class="badge ${item['status'] === 1 ? 'bg-success' : 'bg-warning'}">${item['status'] === 1 ? 'Resolved' : 'Under Review'}</span></td>
+    <td><span class="badge ${severityClass}">${item['severity']}</span></td>
+    <td>2025-03-01</td>
+    <td>
+        <div class="d-flex">
+            <button data-id="${item['id']}" class="btn detailBtn btn-primary btn-sm me-2">Details</button>
+        </div>
+    </td>
+</tr>`;
+
+            tableList.append(row);
+        });
+
+
+        // Attach click event handlers to detail buttons
+        $('.detailBtn').on('click', async function() {
+            let id = $(this).data('id');
+            await displayInfo(id);
+            $("#reportDetailsModal").modal('show');
+        });
+
+
+
+
+
+        $('#tableData').DataTable({
+            order: [[0, 'asc']],
+            lengthMenu: [5, 10, 15, 20, 30],
+            responsive: true,
+            pagingType: 'simple_numbers',
+            language: {
+                paginate: {
+                    previous: '&laquo; Previous',
+                    next: 'Next &raquo;'
+                }
+            },
+            // This ensures proper spacing and styling for the pagination
+            drawCallback: function() {
+                $('.dataTables_paginate > .pagination').addClass('pagination-sm');
+            }
+        });
+    }
 </script>
+
+
+
+
