@@ -5,7 +5,7 @@
                 <div class="card-header bg-primary text-white">
                     <h4>Report</h4>
                 </div>
-                <div class="card-body">
+                <div class="card-body" id="update-form">
 
 
                     <div class="col-12 p-1">
